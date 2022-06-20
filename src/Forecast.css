@@ -1,5 +1,25 @@
-.Forecast h3 {
+.Forecast h1 {
   font-size: 12px;
   text-align: start;
   margin-left: 25px;
+}
+.Forecast .weather {
+  border: 1px solid cornflowerblue;
+  border-radius: 5px;
+  margin: 20px;
+}
+.Forecast .date {
+  font-size: 15px;
+  margin-top: 20px;
+}
+.Forecast ul {
+  list-style: none;
+  text-align: center;
+}
+.Forecast .description::first-letter {
+  text-transform: capitalize;
+}
+.Forecast .weather-analysis {
+  margin-top: 60px;
+  font-size: 18px;
 }

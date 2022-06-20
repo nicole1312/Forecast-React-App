@@ -4,7 +4,8 @@
 .App .box {
   border: 1px solid cornflowerblue;
   border-radius: 5px;
-  margin: 30px;
+  margin: 30px auto;
   padding: 20px;
+  text-align: center;
   width: 600px;
 }
