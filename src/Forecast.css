@@ -1,25 +1,49 @@
 .Forecast h1 {
+  color: var(--primary-color);
   font-size: 12px;
   text-align: start;
   margin-left: 25px;
 }
+.Forecast .form-search {
+  border: 1px solid var(--border-color);
+  width: 420px;
+}
+.Forecast .btn {
+  color: #75797f;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  margin-left: 37px;
+}
 .Forecast .weather {
-  border: 1px solid cornflowerblue;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   margin: 20px;
 }
 .Forecast .date {
+  color: var(--primary-color);
   font-size: 15px;
   margin-top: 20px;
 }
-.Forecast ul {
-  list-style: none;
-  text-align: center;
+.Forecast .city {
+  font-size: 30px;
+  margin: 0;
+}
+.Forecast .description {
+  color: var(--primary-color);
+  line-height: 1;
+  font-size: 15px;
 }
 .Forecast .description::first-letter {
   text-transform: capitalize;
 }
+.Forecast .degrees {
+  font-size: 15px;
+  margin-top: -15px;
+}
+
 .Forecast .weather-analysis {
-  margin-top: 60px;
   font-size: 18px;
+  list-style: none;
+  margin: 80px 30px 30px -30px;
+  text-align: center;
 }
