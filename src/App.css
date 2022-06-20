@@ -1,3 +1,10 @@
 .App {
   text-align: center;
 }
+.App .box {
+  border: 1px solid cornflowerblue;
+  border-radius: 5px;
+  margin: 30px;
+  padding: 20px;
+  width: 600px;
+}

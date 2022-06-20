@@ -1,11 +1,13 @@
 import "./App.css";
 import Forecast from "./Forecast";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div className="App">
-      <h1> Hello</h1>
-      <Forecast />
+      <div className="box">
+        <Forecast />
+      </div>
       <footer>
         <a
           href="https://github.com/nicole1312/forecast-react-app"
