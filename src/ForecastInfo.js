@@ -1,5 +1,6 @@
 import React from "react";
 import DateStructure from "./DateStructure";
+import WeatherIcon from "./WeatherIcon";
 
 export default function ForecastInfo(props) {
   return (
@@ -25,9 +26,12 @@ export default function ForecastInfo(props) {
                 <strong>⇩{Math.round(props.data.minTemperature)}</strong>°C
               </span>
             </div>
-            <p>
-              <img src={props.data.iconLink} alt="weather-icon" />
-            </p>
+            <div className="clearfix">
+              <WeatherIcon
+                code={props.data.icon}
+                alt={props.data.description}
+              />
+            </div>
           </div>
           <div className="col-sm-6">
             <ul className="weather-analysis">

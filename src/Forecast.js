@@ -15,7 +15,7 @@ export default function Forecast(props) {
       minTemperature: response.data.main.temp_min,
       description: response.data.weather[0].description,
       defaultCity: response.data.name,
-      iconLink: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       humidity: response.data.main.humidity,
       pressure: response.data.main.pressure,
       wind: response.data.wind.speed,
@@ -66,7 +66,7 @@ export default function Forecast(props) {
   } else {
     search();
     return (
-      <SpinnerDiamond size={50} color="#43597f" speed={100} still={false} />
+      <SpinnerDiamond size={50} color="#516d96" speed={100} still={false} />
     );
   }
 }
