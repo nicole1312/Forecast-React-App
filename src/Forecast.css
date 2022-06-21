@@ -6,13 +6,15 @@
 }
 .Forecast .form-search {
   border: 1px solid var(--border-color);
-  width: 420px;
+  width: 435px;
+  margin-left: 10px;
+  margin: auto;
 }
 .Forecast .btn {
   color: #75797f;
   background-color: white;
   border: 1px solid var(--border-color);
-  margin-left: 37px;
+  margin-left: 35px;
 }
 .Forecast .weather {
   border: 1px solid var(--border-color);
