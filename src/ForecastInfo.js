@@ -1,6 +1,7 @@
 import React from "react";
 import DateStructure from "./DateStructure";
 import WeatherIcon from "./WeatherIcon";
+import ForecastTemperature from "./ForecastTemperature";
 
 export default function ForecastInfo(props) {
   return (
@@ -14,9 +15,9 @@ export default function ForecastInfo(props) {
             <h3 className="city text-capitalize">{props.data.defaultCity}</h3>
             <h4 className="description ">{props.data.description}</h4>
 
-            <p>
-              <strong>{Math.round(props.data.temperature)}</strong>°C
-            </p>
+            <div>
+              <ForecastTemperature celsius={props.data.temperature} />
+            </div>
             <div className="degrees">
               <span>
                 <strong>⇧{Math.round(props.data.maxTemperature)}</strong>

@@ -39,9 +39,9 @@
 .Forecast .description::first-letter {
   text-transform: capitalize;
 }
-.Forecast .degrees {
+.ForecastInfo .degrees {
   font-size: 15px;
-  margin-top: -15px;
+  margin: -15px 0 15px;
 }
 
 .Forecast .weather-analysis {
@@ -49,4 +49,15 @@
   list-style: none;
   margin: 80px 30px 30px -30px;
   text-align: center;
+}
+.ForecastTemperature {
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+.ForecastTemperature .units {
+  font-size: 17px;
+}
+.ForecastTemperature .tempUnits {
+  text-decoration: none;
+  color: rgb(235, 119, 70);
 }
