@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App ">
       <div className="box">
-        <Forecast defaultCity="london" />
+        <Forecast defaultCity="London" />
       </div>
       <footer>
         <a

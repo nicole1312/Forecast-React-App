@@ -2,24 +2,24 @@
   color: var(--primary-color);
   font-size: 12px;
   text-align: start;
-  margin-left: 25px;
+  margin-left: 35px;
 }
 .Forecast .form-search {
   border: 1px solid var(--border-color);
-  width: 435px;
-  margin-left: 10px;
-  margin: auto;
+  max-width: 420px;
+  margin: auto 20px;
 }
 .Forecast .btn {
   color: #75797f;
   background-color: white;
   border: 1px solid var(--border-color);
-  margin-left: 35px;
+  margin: auto 20px;
+  max-width: auto;
 }
 .Forecast .weather {
   border: 1px solid var(--border-color);
   border-radius: 5px;
-  margin: 20px;
+  margin: 10px 30px;
 }
 .Forecast .date {
   color: var(--primary-color);
