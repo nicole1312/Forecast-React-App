@@ -54,7 +54,7 @@ export default function Forecast(props) {
                 />
               </div>
               <div className="col-sm-2">
-                <input type="submit" value="Search" className="btn btn-info" />
+                <input type="submit" value="Search" className="btn btn-light" />
               </div>
             </div>
           </form>

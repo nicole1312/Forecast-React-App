@@ -1,15 +1,17 @@
 :root {
   --primary-color: #516d96;
   --secondary-color: #43597f;
-  --border-color: #d8e5fb;
+  --border-color: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  --links-color: #eb7746;
 }
 
 .App {
   color: var(--secondary-color);
   font-weight: 450;
-  width: 600;
+  max-width: 600%;
 }
 .App .box {
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
   border: 1px solid var(--primary-color);
   border-radius: 5px;
   margin: 30px auto;
@@ -24,4 +26,7 @@
   margin: auto;
   margin-top: -30px;
   width: 600px;
+}
+.App .open-source-link {
+  color: var(--links-color);
 }

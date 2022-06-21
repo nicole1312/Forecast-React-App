@@ -16,27 +16,27 @@
   margin: auto 20px;
   max-width: auto;
 }
-.Forecast .weather {
+.ForecastInfo .weather {
   border: 1px solid var(--border-color);
   border-radius: 5px;
-  margin: 10px 30px;
+  margin: 10px 30px 30px;
   padding-bottom: 20px;
 }
-.Forecast .date {
+.ForecastInfo .date {
   color: var(--primary-color);
   font-size: 15px;
   margin-top: 20px;
 }
-.Forecast .city {
+.ForecastInfo .city {
   font-size: 30px;
   margin: 0;
 }
-.Forecast .description {
+.ForecastInfo .description {
   color: var(--primary-color);
   line-height: 1;
   font-size: 15px;
 }
-.Forecast .description::first-letter {
+.ForecastInfo .description::first-letter {
   text-transform: capitalize;
 }
 .ForecastInfo .degrees {
@@ -44,12 +44,14 @@
   margin: -15px 0 15px;
 }
 
-.Forecast .weather-analysis {
+.ForecastInfo .weather-analysis {
   font-size: 18px;
+  font-weight: 480;
   list-style: none;
   margin: 80px 30px 30px -30px;
   text-align: center;
 }
+
 .ForecastTemperature {
   font-size: 27px;
   margin-bottom: 15px;
@@ -59,5 +61,5 @@
 }
 .ForecastTemperature .tempUnits {
   text-decoration: none;
-  color: rgb(235, 119, 70);
+  color: var(--links-color);
 }
