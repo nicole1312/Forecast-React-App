@@ -30,6 +30,7 @@ export default function ForecastInfo(props) {
             <div className="clearfix">
               <WeatherIcon
                 code={props.data.icon}
+                size={55}
                 alt={props.data.description}
               />
             </div>

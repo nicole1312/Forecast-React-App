@@ -1,0 +1,6 @@
+.FullWeekForecast .temp {
+  font-size: 12px;
+}
+.FullWeekForecast .week-days {
+  font-weight: 600;
+}

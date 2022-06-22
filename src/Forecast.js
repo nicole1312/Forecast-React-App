@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { SpinnerDiamond } from "spinners-react";
 import ForecastInfo from "./ForecastInfo";
+import FullWeekForecast from "./FullWeekForecast";
 import "./Forecast.css";
 
 export default function Forecast(props) {
@@ -60,7 +61,7 @@ export default function Forecast(props) {
           </form>
         </div>
         <ForecastInfo data={forecastData} />
-        <WeekForecast />
+        <FullWeekForecast />
       </div>
     );
   } else {
