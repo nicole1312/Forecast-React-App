@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import DailyWeatherForecast from "./DailyWeatherForecast";
 import axios from "axios";
 import "./FullWeekForecast.css";
@@ -6,6 +6,10 @@ import "./FullWeekForecast.css";
 export default function FullWeekForecast(props) {
   let [completed, setCompleted] = useState(false);
   let [dailyWeather, setDailyWeather] = useState(null);
+
+  useEffect(() => {
+    setCompleted(false);
+  }, [props.coordinates]);
 
   function handleResponse(response) {
     setDailyWeather(response.data.daily);
@@ -19,10 +23,12 @@ export default function FullWeekForecast(props) {
           {dailyWeather.map(function (dailyForecast, index) {
             if (index < 6) {
               return (
-                <div className="col" key={index}>
+                <div className="col " key={index}>
                   <DailyWeatherForecast data={dailyForecast} />
                 </div>
               );
+            } else {
+              return null;
             }
           })}
         </div>
