@@ -1,0 +1,11 @@
+.ForecastTemperature {
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+.ForecastTemperature .units {
+  font-size: 17px;
+}
+.ForecastTemperature .tempUnits {
+  text-decoration: none;
+  color: var(--links-color);
+}

@@ -59,8 +59,8 @@ export default function Forecast(props) {
             </div>
           </form>
         </div>
-
         <ForecastInfo data={forecastData} />
+        <WeekForecast />
       </div>
     );
   } else {

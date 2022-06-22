@@ -1,0 +1,33 @@
+.ForecastInfo .weather {
+  margin: 10px 30px 30px;
+  padding-bottom: 20px;
+}
+.ForecastInfo .date {
+  color: var(--primary-color);
+  font-size: 15px;
+  margin-top: 20px;
+}
+.ForecastInfo .city {
+  font-size: 30px;
+  margin: 0;
+}
+.ForecastInfo .description {
+  color: var(--primary-color);
+  line-height: 1;
+  font-size: 15px;
+}
+.ForecastInfo .description::first-letter {
+  text-transform: capitalize;
+}
+.ForecastInfo .degrees {
+  font-size: 15px;
+  margin: -15px 0 15px;
+}
+
+.ForecastInfo .weather-analysis {
+  font-size: 18px;
+  font-weight: 480;
+  list-style: none;
+  margin: 80px 30px 30px -30px;
+  text-align: center;
+}
