@@ -10,7 +10,7 @@ export default function ForecastInfo(props) {
       <div className="weather">
         <div className="row">
           <div className="col-sm-6 ">
-            <p className="date">
+            <p className="date mb-1">
               <DateStructure date={props.data.date} />
             </p>
             <h3 className="city ">{props.data.defaultCity}</h3>

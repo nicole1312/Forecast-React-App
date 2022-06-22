@@ -1,10 +1,9 @@
 .ForecastInfo .weather {
   margin: 10px 30px 30px;
-  padding-bottom: 20px;
 }
 .ForecastInfo .date {
   color: var(--primary-color);
-  font-size: 15px;
+  font-size: 13px;
   margin-top: 20px;
 }
 .ForecastInfo .city {

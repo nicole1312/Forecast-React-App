@@ -11,6 +11,7 @@ export default function Forecast(props) {
   function handleSubmit(response) {
     setForecastData({
       loaded: true,
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       maxTemperature: response.data.main.temp_max,
       minTemperature: response.data.main.temp_min,
@@ -61,7 +62,7 @@ export default function Forecast(props) {
           </form>
         </div>
         <ForecastInfo data={forecastData} />
-        <FullWeekForecast />
+        <FullWeekForecast coordinates={forecastData.coordinates} />
       </div>
     );
   } else {
