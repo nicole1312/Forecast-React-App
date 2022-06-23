@@ -2,11 +2,3 @@
   font-size: 27px;
   margin-bottom: 15px;
 }
-
-.ForecastTemperature .units {
-  font-size: 27px;
-}
-.ForecastTemperature .tempUnits {
-  text-decoration: none;
-  color: var(--links-color);
-}

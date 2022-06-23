@@ -14,6 +14,14 @@ export default function FullWeekForecast(props) {
     setDailyWeather(response.data.daily);
     setCompleted(true);
   }
+  function onLoad() {
+    let apiKey = "57f652d59f6bbf0d76afefad23d740f6";
+    let latitude = props.coordinates.lat;
+    let longitude = props.coordinates.lon;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+
+    axios.get(apiUrl).then(handleResponse);
+  }
 
   if (completed) {
     return (
@@ -34,12 +42,7 @@ export default function FullWeekForecast(props) {
       </div>
     );
   } else {
-    let apiKey = "57f652d59f6bbf0d76afefad23d740f6";
-    let latitude = props.coordinates.lat;
-    let longitude = props.coordinates.lon;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-
-    axios.get(apiUrl).then(handleResponse);
+    onLoad();
 
     return null;
   }
