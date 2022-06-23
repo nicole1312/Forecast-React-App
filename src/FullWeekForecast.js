@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import DailyWeatherForecast from "./DailyWeatherForecast";
 import axios from "axios";
-import "./FullWeekForecast.css";
 
 export default function FullWeekForecast(props) {
   let [completed, setCompleted] = useState(false);

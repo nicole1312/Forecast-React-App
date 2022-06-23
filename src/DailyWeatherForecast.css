@@ -1,0 +1,16 @@
+.DailyWeatherForecast .temp {
+  font-size: 12px;
+}
+.DailyWeatherForecast .week-days {
+  font-weight: 600;
+}
+.DailyWeatherForecast {
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  margin: 10px -10px;
+}
+@media (max-width: 600px) {
+  .DailyWeatherForecast {
+    margin: 5px -4px;
+  }
+}

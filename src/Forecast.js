@@ -40,26 +40,32 @@ export default function Forecast(props) {
 
   if (forecastData.loaded) {
     return (
-      <div className="Forecast">
-        <h1>TheWeatherHub</h1>
-        <div className="container">
-          <form onSubmit={handleCitySubmit}>
-            <div className="row">
-              <div className="col-sm-9">
-                <input
-                  type="search"
-                  placeholder="Search for a city..."
-                  autoFocus="on"
-                  autoComplete="off"
-                  className="form-control form-search"
-                  onChange={handleUpdate}
-                />
+      <div className="container-fluid ">
+        <div className="Forecast">
+          <h1>TheWeatherHub</h1>
+          <div className="form-box">
+            <form onSubmit={handleCitySubmit}>
+              <div className="row aligh-items-center g-3">
+                <div className="col-sm-9 ">
+                  <input
+                    type="search"
+                    placeholder="Search for a city..."
+                    autoFocus="on"
+                    autoComplete="off"
+                    className="form-control form-search  "
+                    onChange={handleUpdate}
+                  />
+                </div>
+                <div className="col-sm-3 ">
+                  <input
+                    type="submit"
+                    value="Search"
+                    className=" form-control btn btn-light "
+                  />
+                </div>
               </div>
-              <div className="col-sm-2">
-                <input type="submit" value="Search" className="btn btn-light" />
-              </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
         <ForecastInfo data={forecastData} />
         <FullWeekForecast coordinates={forecastData.coordinates} />

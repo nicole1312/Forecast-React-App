@@ -2,19 +2,34 @@
   color: var(--primary-color);
   font-size: 12px;
   text-align: start;
-  margin-left: 35px;
+  margin-left: 10px;
 }
 .Forecast .form-search {
   border: 1px solid var(--border-color);
   box-shadow: 1px 1px 1px#d0dbe0;
-  max-width: 420px;
-  margin: auto 20px;
+  max-width: auto;
+  margin: auto;
 }
 .Forecast .btn {
   color: #75797f;
   background-color: white;
   border: 1px solid var(--border-color);
   box-shadow: 1px 1px 1px#d0dbe0;
-  margin: auto 20px;
-  max-width: auto;
+}
+@media (max-width: 600px) {
+  .Forecast h1 {
+    margin-left: -5px;
+  }
+
+  .Forecast .form-search {
+    margin-left: -10px;
+    width: auto;
+  }
+  .Forecast .btn {
+    display: inline;
+    position: relative;
+    top: -53px;
+    right: -120px;
+    width: auto;
+  }
 }

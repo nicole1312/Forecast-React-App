@@ -5,7 +5,7 @@ import "./ForecastInfo.css";
 
 export default function ForecastInfo(props) {
   return (
-    <div className="ForecastInfo">
+    <div className="ForecastInfo container-fluid">
       <div className="weather">
         <div className="row">
           <div className="col-sm-6 ">

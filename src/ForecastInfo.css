@@ -34,3 +34,13 @@
   margin: 80px 30px 30px -30px;
   text-align: center;
 }
+@media (max-width: 600px) {
+  .ForecastInfo .weather {
+    margin-top: -55px;
+  }
+
+  .ForecastInfo .weather-analysis {
+    margin: 5px;
+    text-align: center;
+  }
+}

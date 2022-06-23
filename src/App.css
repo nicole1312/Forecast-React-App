@@ -32,3 +32,8 @@
   color: var(--links-color);
   text-decoration: none;
 }
+@media (max-width: 600px) {
+  .App .box {
+    max-width: 100%;
+  }
+}
