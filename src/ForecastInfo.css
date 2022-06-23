@@ -18,9 +18,13 @@
 .ForecastInfo .description::first-letter {
   text-transform: capitalize;
 }
+.ForecastInfo .celsius-degrees {
+  font-size: 27px;
+  margin: -5px 2px 5px;
+}
 .ForecastInfo .degrees {
   font-size: 15px;
-  margin: -15px 0 15px;
+  margin: 0 10px 15px 15px;
 }
 
 .ForecastInfo .weather-analysis {

@@ -1,7 +1,6 @@
 import React from "react";
 import DateStructure from "./DateStructure";
 import WeatherIcon from "./WeatherIcon";
-import ForecastTemperature from "./ForecastTemperature";
 import "./ForecastInfo.css";
 
 export default function ForecastInfo(props) {
@@ -10,23 +9,30 @@ export default function ForecastInfo(props) {
       <div className="weather">
         <div className="row">
           <div className="col-sm-6 ">
-            <p className="date mb-1">
+            <p className="date ">
               <DateStructure date={props.data.date} />
             </p>
             <h3 className="city ">{props.data.defaultCity}</h3>
             <h4 className="description ">{props.data.description}</h4>
+
             <div>
-              <ForecastTemperature celsius={props.data.temperature} />
+              <strong>
+                <span className="celsius-degrees">
+                  {Math.round(props.data.temperature)}
+                </span>
+                <span>°C</span>
+              </strong>
             </div>
+
             <div className="degrees">
               <span>
-                <strong>⇧{Math.round(props.data.maxTemperature)}</strong>
-                °C
+                <strong>⇧{Math.round(props.data.maxTemperature)}</strong>°
               </span>
               <span>
-                <strong>⇩{Math.round(props.data.minTemperature)}</strong>°C
+                <strong>⇩{Math.round(props.data.minTemperature)}</strong>°
               </span>
             </div>
+
             <div className="clearfix">
               <WeatherIcon
                 code={props.data.icon}
