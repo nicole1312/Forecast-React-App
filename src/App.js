@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="App container-fluid mx-auto d-block ">
+    <div className="App">
       <div className="box">
         <Forecast defaultCity="london" />
       </div>
@@ -15,9 +15,9 @@ function App() {
           rel="noopener noreferrer"
           className="open-source-link"
         >
-          Open-source-code
+          Open-source-code{" "}
         </a>
-        by Nicoleta Serban
+        by Nicole Serban
       </footer>
     </div>
   );

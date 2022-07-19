@@ -1,3 +1,10 @@
 body {
-  margin: 0;
+  margin: 20px;
+}
+@media (max-width: 600px) {
+  body {
+    display: block;
+    margin: 25px 25px;
+    max-height: auto;
+  }
 }

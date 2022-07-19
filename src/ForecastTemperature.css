@@ -2,3 +2,12 @@
   font-size: 27px;
   margin-bottom: 15px;
 }
+.ForecastTemperature .units {
+  font-size: 20px;
+}
+.ForecastTemperature .tempUnits {
+  color: var(--links-color);
+  font-size: 20px;
+  margin: 7px;
+  text-decoration: none;
+}

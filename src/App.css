@@ -8,7 +8,6 @@
 .App {
   color: var(--secondary-color);
   font-weight: 450;
-  max-width: 600%;
 }
 .App .box {
   background: var(--border-color);
@@ -18,7 +17,7 @@
   margin: 30px auto;
   padding: 10px 20px 15px;
   text-align: center;
-  max-width: 600px;
+  max-width: 800px;
 }
 .App footer {
   color: var(--primary-color);
@@ -26,7 +25,8 @@
   font-weight: 600;
   margin: auto;
   margin-top: -30px;
-  width: 600px;
+  text-align: center;
+  width: 800px;
 }
 .App .open-source-link {
   color: var(--links-color);
@@ -35,5 +35,10 @@
 @media (max-width: 600px) {
   .App .box {
     max-width: 100%;
+    margin-bottom: 30px;
+    opacity: 0.8;
+  }
+  .App footer {
+    text-align: start;
   }
 }
